@@ -2,6 +2,7 @@ import glob
 import os
 from typing import List, Union
 from xml.dom import minidom
+from pathlib import Path
 
 import tqdm
 from blingfire import text_to_sentences
