@@ -12,6 +12,8 @@ def main():
     save_path = Path("corpora/augustinian-sermon-parallelisms.txt")
     if save_path.exists():
         return
+    else:
+        save_path.parent.mkdir(parents=True, exist_ok=True)
 
     files = glob("Augustinian-Sermon-Parallelisms/data/original/*.txt")
 

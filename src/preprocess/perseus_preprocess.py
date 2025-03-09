@@ -251,6 +251,7 @@ def main():
     print(files)
 
     outpath = "corpora/lat_text_perseus_preprocessed.txt"
+    Path(outpath).parent.mkdir(parents=True, exist_ok=True)
     with open(outpath, "w") as f:
         f.write("")
 
