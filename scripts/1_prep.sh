@@ -43,7 +43,7 @@ python src/indexing.py \
     corpora/augustinian-sermon-parallelisms.txt
 
 # Latin perseus, , fasttext-la-vectors
-gigt clone https://github.com/cltk/lat_text_perseus.git
+git clone https://github.com/cltk/lat_text_perseus.git
 python src/preprocess/perseus_preprocess.py
 python src/indexing.py \
     --backend fasttext \
